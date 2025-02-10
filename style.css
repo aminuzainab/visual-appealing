@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body {
+    background-color: hsl(148, 38%, 91%);
+    font-family: 'Karla', sans-serif;
+
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    position: absolute;
+    left: 30%;
+    height: 70%;
+}
+
+.form-group {
+    background-color: white;
+    padding: 40px;
+    flex-direction: row;
+    border-radius: 25px;
+
+}
+
+.head {
+    font-family: Karla;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border: 2px outset black;
+    width: 20px;
+    /* Circle size */
+    height: 20px;
+    /* Circle size */
+    border-radius: 50%;
+}
+
+.input3 {
+    margin-top: 3px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+.input3:focus{
+    border-color: hsl(148, 30%, 75%);
+    outline: none;
+}
+
+.label1.required::after {
+    content: '*';
+    border-radius: 3px;
+}
+
+.first-row {
+    display: flex;
+    column-gap: 15px;
+}
+
+.input1 {
+    width: 250px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input1:focus{
+    border-color: hsl(148, 30%, 75%);
+    outline: none;
+}
+.input2:focus{
+    border-color: hsl(148, 30%, 75%);
+    outline: none;
+}
+
+.input2 {
+    width: 250px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.lastname-label.required::after {
+    content: '*';
+    border-radius: 3px;
+    cursor: pointer
+}
+
+.label3 {
+    border-radius: 3px;
+}
+
+.email-label.required::after {
+    content: '*';
+    
+}
+
+.query-input-field {
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.query-input:focus{
+    border-color: hsl(148, 35%, 85%);
+    outline: none;
+}
+
+.query-input-field:has(input[type="radio"]:checked) {
+    background-color: hsl(148, 38%, 91%);
+
+}
+
+input[type=radio] {
+    accent-color: hsl(169, 82%, 27%)
+}
+
+input[type=checkbox] {
+    accent-color: hsl(169, 82%, 27%)
+}
+
+.query-input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.query-label.required::after {
+    content: '*';
+}
+
+.msg.required::after {
+    content: '*';
+}
+
+.msg-input {
+    width: 90%;
+    border-radius: 5px;
+    padding: 35px;
+    cursor: pointer;
+}
+
+.msg-input:focus{
+    border-color: hsl(148, 30%, 75%);
+    outline: none;
+}
+
+
+.checkbox.required::after {
+    content: '*';
+}
+
+button {
+    display: flex;
+    background-color: hsl(169, 82%, 27%);
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: -30px;
+    cursor: pointer;
+
+}
+
+.success {
+    position: absolute;
+    top: 3%;
+    left: 36%;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    background-color: hsl(187, 24%, 22%);
+    color: hsl(148, 38%, 91%);
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+
+    .container{
+        margin-top: 20px;
+        margin-left: -25%;
+        padding: 10px;
+    }
+
+    .input1,.input2{
+        width: 140%;
+    }
+
+    .first-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .msg-input {
+        width: 77%;
+    }
+
+    .head {
+        margin-top: -15px;
+    }
+
+    .query-input {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    button {
+        margin-bottom: -50px;
+        width: 110%;
+    }
+
+    .success {
+        margin-top: -18px;
+        margin-left: -90px;
+        width: 300px;
+        height: 60px;
+        padding: 3px;
+    }
+
+
+}
+
+
+.attribution {
+    display: flex;
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+}
+
+@media  screen and (max-width: 320px) { 
+
+    .container{
+        margin-top: 20px;
+    }
+    .first-row{
+        .input1,.input2{
+            width: 110%;
+        }
+    
+    }
+
+    .msg-input{
+        width: 70%;
+    }
+
+    .success{
+        margin-left: -75px;
+        height: 57px;
+        width: 250px;
+    }
+    
+}
+
+@media screen and (min-width: 425px) {
+    .container {
+        margin-left: -40px;
+    }
+
+    .success{
+        text-align: center;
+    }
+}
+
+/* @media screen and (min-width: 425px) {
+
+    .first-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .query-input{
+        flex-direction: column;
+        column-gap: 10px;
+    }
+} */
+
+
+/* @media  screen and (max-width: 768px) {
+    .first-row{
+        display: flex;
+        column-gap: 10px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    
+    }
+} */
