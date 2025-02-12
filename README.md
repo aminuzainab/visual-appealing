@@ -70,4 +70,4 @@ const proudOfThisFunc = () => {
 ## Author
 
 - Website - [(Zainab Aminu mikail)]
-- Frontend Mentor - [@yaminuzainab)]
+- Frontend Mentor - [(@aminuzainab)]
