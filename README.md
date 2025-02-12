@@ -29,8 +29,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/aminuzainab/visual-appealing)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [(https://github.com/aminuzainab/visual-appealing)]
+- Live Site URL: [(https://aminuzainab.github.io/visual-appealing/)]
 
 ## My process
 
@@ -69,5 +69,5 @@ const proudOfThisFunc = () => {
 
 ## Author
 
-- Website - [Add your name here](Zainab Aminu mikail)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/aminuzainab)
+- Website - [(Zainab Aminu mikail)]
+- Frontend Mentor - [@yaminuzainab)]
